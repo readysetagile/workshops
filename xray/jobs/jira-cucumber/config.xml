@@ -1,0 +1,40 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>Export Jira tests into the features directory</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <com.xpandit.plugins.xrayjenkins.task.XrayExportBuilder plugin="xray-for-jira-connector@1.3.0">
+      <xrayInstance>
+        <configID>1d19a06f-564c-4091-adac-9e1883aceaa1</configID>
+        <alias>JR Jira</alias>
+        <serverAddress>http://host.docker.internal:8080</serverAddress>
+        <username>john</username>
+        <password>3553jr</password>
+      </xrayInstance>
+      <fields>
+        <entry>
+          <string>filePath</string>
+          <string>features</string>
+        </entry>
+        <entry>
+          <string>issues</string>
+          <string>GDT-2;GDT-9;GDT-10;GDT-11</string>
+        </entry>
+      </fields>
+      <serverInstance>1d19a06f-564c-4091-adac-9e1883aceaa1</serverInstance>
+      <issues>GDT-2;GDT-9;GDT-10;GDT-11</issues>
+      <filePath>features</filePath>
+    </com.xpandit.plugins.xrayjenkins.task.XrayExportBuilder>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>
