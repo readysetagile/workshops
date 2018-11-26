@@ -44,12 +44,11 @@ There are many ways to improve this setup.  The idea was to get you started with
 
 Good luck in your continuous integration efforts.
 
-a docker issue with a lot of info on containers connecting to hosts
-https://github.com/docker/for-win/issues/453
+
 
 Other Resources:
-
+	- a docker issue with a lot of info on containers connecting to hosts: 
+https://github.com/docker/for-win/issues/453
 	- Ruby slave: https://devopscube.com/docker-containers-as-build-slaves-jenkins/
-
 	- docker jenkins ruby: https://github.com/Signiant/docker-jenkins-ruby
 
